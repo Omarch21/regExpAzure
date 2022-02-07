@@ -58,11 +58,11 @@
     </nav>
     <article>
         <h2>Results:</h2>
-        <p id="demo"></p><!-- Where the results will be-->
-    <p id="demo2"></p>
-    <p id="demo3"></p>
-    <p id="demo4"></p>
-    <p id="demo5"></p>
+        <p id="in"></p><!-- Where the results will be-->
+    <p id="in2"></p>
+    <p id="in3"></p>
+    <p id="in4"></p>
+    <p id="in5"></p>
     </article>
     <nav style="width: 23.855%">
 
@@ -82,20 +82,20 @@
         const regex = new RegExp(y);
         const globalRegex = new RegExp(y, 'g');
         if(regex.test(str)){//returns true if the word is in regular expression
-         document.getElementById("demo").innerHTML = "It does contain";
+         document.getElementById("in").innerHTML = "It does contain";
         }
         else{
-            document.getElementById("demo").innerHTML = "doesnt contain";
+            document.getElementById("in").innerHTML = "doesnt contain";
         }
 
 
-        document.getElementById("demo2").innerHTML = "Last index: "+ globalRegex.lastIndex;
+        document.getElementById("in2").innerHTML = "Last index: "+ globalRegex.lastIndex;
 
-        document.getElementById("demo3").innerHTML = globalRegex.test(str);
+        document.getElementById("in3").innerHTML = globalRegex.test(str);
 
-        document.getElementById("demo4").innerHTML = "Last index: " + globalRegex.lastIndex;
+        document.getElementById("in4").innerHTML = "Last index: " + globalRegex.lastIndex;
 
-        document.getElementById("demo5").innerHTML = globalRegex.test(str);
+        document.getElementById("in5").innerHTML = globalRegex.test(str);
         }
     </script>
 </body>
